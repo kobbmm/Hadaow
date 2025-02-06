@@ -5,8 +5,8 @@
   tasks:
     - name: Creating the Container
       docker_container:
-         name: 66022444HTML-container
-         image: 66022444HTML:latest
+         name: 66022444-container
+         image: 66022444:latest
          ports:
            - "3022:80"  # พอร์ต 3022 บนเครื่อง Docker server -> 80 บน Docker container
          state: started
