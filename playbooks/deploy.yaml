@@ -5,9 +5,9 @@
   tasks:
     - name: Creating the Container
       docker_container:
-         name: 66022444HTML-container #docker container name
-         image: 66022444HTML:latest #docker image name
+         name: 66022444HTML-container
+         image: 66022444HTML:latest
          ports:
-           - "3022:80" #เลข port ตัวแรกคือเลข  port ที่รับมาจาก browser ตัวหลังคือ  port ของ docker (คงไว้ที่ 80 ถ้าเป็น nextjs project ก็ 3000)
+           - "3022:80"  # พอร์ต 3022 บนเครื่อง Docker server -> 80 บน Docker container
          state: started
          restart: true
