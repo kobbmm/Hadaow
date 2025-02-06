@@ -5,9 +5,10 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: 66022444HTML:latest #docker image name
+         name: 66022444HTML:latest
          source: build
          build:
-            path: ~/66022444HTML #path ที่เก็บไฟล์ sourcecode 
+            path: ~/66022444HTML  # แหล่งที่อยู่ของ source code บน Docker server
          state: present
          force_source: true
+
